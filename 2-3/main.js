@@ -5,3 +5,5 @@ btn.addEventListener('click',function(){
   const n = Math.floor(Math.random()*2);
   btn.textContent = results[n];
   });
+
+  console.log(btn.textContent);
