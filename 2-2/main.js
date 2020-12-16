@@ -1,6 +1,5 @@
 function changeBtn(){
   let p1 = document.getElementById('p1');
   p1.textContent = '';
+  console.log(p1);
 }
-
-console.log(changeBtn);
