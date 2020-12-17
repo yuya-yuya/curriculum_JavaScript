@@ -1,6 +1,6 @@
 function addText() {
   var ta1 = document.getElementById("text1").value;
-  document.getElementById("area1").value += ta1;
+  document.getElementById("area1").value +=ta1 + "\n";
 }
 
 function deleteText() {
