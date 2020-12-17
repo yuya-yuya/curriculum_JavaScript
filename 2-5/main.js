@@ -1,17 +1,22 @@
 function changeLang(){
   let ta1 = document.getElementById("lng").value;
-  let jap = document.getElementById("jap");
-  let eng = document.getElementById("eng");
+  let table = document.getElementById("table");
+
+  var jap = table.rows[0];
+  var eng = table.rows[1];
 
   switch(ta1){
     case "日本語":
-      document.inner = "hj";
-      break;
+      jap.style.display = "block";
+      eng.style.display = "none";
+      break; 
     case "English":
-      tr.textContent = "atjal";
+      eng.style.display = "block";
+      jap.style.display = "none";
       break;
     case "全て表示":
-      tr.textContent = "chg";
+      eng.style.display = "block";
+      jap.style.display = "block";
       break;
   }
 
