@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <body>
     <div class="box">
-      <div class="left"></div>
-      <div class="right"></div>
+      <div id="left" class="left action"></div>
+      <div id="right" class="right action"></div>
     </div>
     <button class="click">クリック</button>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
-      $('click').on('click',function(){
-        $('.left').addClass('left.action');
-        $('.right').addClass('right.action');
-        $('.left').removeClass('left')
-        $('.right').removeClass('right');
-      })
+      $('button').on("click",function(){
+        $("#left").toggleClass('action');
+        $("#right").toggleClass('action');
+      });
     </script>
   </body>
 </html>

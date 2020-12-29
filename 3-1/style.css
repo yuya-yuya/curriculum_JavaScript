@@ -49,25 +49,30 @@ table {
     width: 50%;
     height: 100vh;
     background-color: black;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     transition: all 2s ease;
+    transform: translateX();
 }
 .left.action{
     width: 0;
     transition: all 2s ease;
+    transform: translateX();
 }
 .right{
     width: 50%;
     height: 100vh;
     background-color: black;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     transition: all 2s ease;
+    transform: translateX();
 }
+
 .right.action{
     width: 0;
     transition: all 2s ease;
+    transform: translateX();
 }
 .click{
     position: absolute;
